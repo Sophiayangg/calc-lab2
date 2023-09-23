@@ -25,19 +25,19 @@ public class CalculatorActivity extends AppCompatActivity {
         // Check which button was clicked and perform the respective operation
         if (clickedButtonId == R.id.addButton) {
             int result = number1 + number2;
-            resultTextView.setText(result);
+            resultTextView.setText(String.valueOf(result));
         } else if (clickedButtonId == R.id.subtractButton) {
             int result = number1 - number2;
-            resultTextView.setText(result);
+            resultTextView.setText(String.valueOf(result));
         } else if (clickedButtonId == R.id.multiplyButton) {
             int result = number1 * number2;
-            resultTextView.setText(result);
+            resultTextView.setText(String.valueOf(result));
         } else if (clickedButtonId == R.id.divideButton) {
             if (number2 == 0) {
                 resultTextView.setText("Cannot divide by zero");
             } else {
                 int result = number1 / number2;
-                resultTextView.setText(result);
+                resultTextView.setText(String.valueOf(result));
             }
         } else {
             resultTextView.setText("Unknown operation");
